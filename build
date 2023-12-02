@@ -87,7 +87,7 @@ if is_enabled "${NO_RDP}"; then
     TAG="${UBUNTU_CODENAME}"
 elif is_disabled "${NO_RDP}"; then
     BASE_IMAGE="nguoianphu/docker-remote-desktop"
-    TAG="ubuntu-${UBUNTU_CODENAME}"
+    TAG="${UBUNTU_CODENAME}"
 else
     echo "ERROR: Invalid value '${NO_RDP}' used for NO_RDP"
     exit 1
